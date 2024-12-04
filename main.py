@@ -20,7 +20,7 @@ async def launch_browser(playwright):
     """启动浏览器实例"""
     browser = await playwright.chromium.launch(headless=False)
     context = await browser.new_context(
-        user_agent='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36'
+        user_agent='xxxxxxxx'
     )
     return browser, context
 
