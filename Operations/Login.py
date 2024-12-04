@@ -6,8 +6,8 @@ from  Utils.Slider_Captcha import solve_slider
 async def login(page):
     """执行登录操作"""
     await page.get_by_text('密码登录').click()
-    await page.fill('input#username', 'LeVent')
-    await page.fill('input#password', '123456789@')
+    await page.fill('input#username', 'xxxx')
+    await page.fill('input#password', 'xxxx')
     await page.get_by_role("button", name="登录", exact=True).click()
 
     # 等待所有网络请求完成
